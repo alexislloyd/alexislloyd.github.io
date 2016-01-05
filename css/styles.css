@@ -9,6 +9,7 @@ a:link, a:active, a:visited {
 #main {
 	width:85%;
 	max-width: 650px;
+	min-width: 200px;
 	margin: 20px auto;
 }
 #header {
@@ -30,10 +31,9 @@ a:link, a:active, a:visited {
 
 /* home */
 #intro {
-	min-width: 200px;
-	max-width: 600px;
 	text-align: justify;
-	display: inline-block;
+/*	max-width:500px;
+	margin:auto;*/
 }
 
 /* cv */
