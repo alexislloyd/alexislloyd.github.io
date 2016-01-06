@@ -83,6 +83,5 @@ p, ul {
 	margin: 0px 0px 20px 0px;
 	font-size: 1.1em;
 	line-height: 1.3em;
-	list-style: none;
-	padding: 0px;
+	padding: 0px 20px;
 }
