@@ -79,6 +79,11 @@ a:hover {
 	letter-spacing: 1px;
 	color: #D90057;
 }
+@media all and (max-width: 630px) {
+	#header {
+		padding:0px;
+	}
+}
 #subhed {
 	margin:20px 0px;
 	font-size: 0.3em;
