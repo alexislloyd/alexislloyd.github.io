@@ -20,9 +20,15 @@ a:hover {
 	clear:both;
 }
 #main {
-	width:85%;
-	max-width: 1024px;
+	width:80%;
+	max-width: 800px;
+	min-width: 300px;
 	margin: 0px auto 50px;
+}
+@media all and (max-width: 630px) {
+	#main {
+		width: 95%;
+	}
 }
 #header {
 	border-bottom: 1px solid #d3d3d3;
@@ -91,9 +97,9 @@ h1 {
 	color: #D90057;
 }
 h2 {
-	font-family: 'Inconsolata', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
-	font-size: 1.1em;
+	font-size: 1em;
 	margin-bottom: 0px;
 	letter-spacing: 1px;
 }
@@ -102,9 +108,12 @@ p, ul {
 	font-size: 1.1em;
 }
 .company {
-	font-style: italic;
+	font-family: 'Montserrat', sans-serif;
 	margin: 5px 0px 20px 0px;
-	font-size: 1em;
+	font-size: 0.9em;
+}
+.date {
+	opacity:0.5;
 }
 .school {
 	margin-top: 0px !important;
