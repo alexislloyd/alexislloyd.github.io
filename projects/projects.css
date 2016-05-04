@@ -136,11 +136,20 @@ a:hover {
 	color:#aaa;
 }
 #project-info {
-	width:80%;
 	margin:20px auto 40px auto;
 	line-height: 1.5em;
 	font-size: 1.1em;
 	letter-spacing: 0.5px;
+}
+@media all and (min-width: 630px) {
+	#project-info {
+		width:80%;
+	}
+}
+@media all and (max-width: 630px) {
+	#project-info {
+		width: 95%;
+	}
 }
 #project-info a {
 	color: #D90057;;
