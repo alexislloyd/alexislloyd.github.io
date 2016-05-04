@@ -187,9 +187,9 @@ a:hover{
 	border: 1px solid #d3d3d3;
 }
 .project img:hover {
-	-webkit-filter: grayscale(0%);
-	-moz-filter: grayscale(0%);
-	filter: grayscale(0%);
+	-webkit-filter: grayscale(60%);
+	-moz-filter: grayscale(60%);
+	filter: grayscale(60%);
 	width:100%;
 }
 .project h1 {
