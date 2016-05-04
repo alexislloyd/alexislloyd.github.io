@@ -180,9 +180,9 @@ a:hover{
 
 
 .project img {
-	-webkit-filter: grayscale(40%);
-	-moz-filter: grayscale(40%);
-	filter: grayscale(40%);
+	-webkit-filter: grayscale(30%);
+	-moz-filter: grayscale(30%);
+	filter: grayscale(30%);
 	width:100%;
 	border: 1px solid #d3d3d3;
 }
