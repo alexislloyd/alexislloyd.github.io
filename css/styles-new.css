@@ -180,16 +180,16 @@ a:hover{
 
 
 .project img {
-	-webkit-filter: grayscale(100%);
-	-moz-filter: grayscale(100%);
-	filter: grayscale(100%);
+	-webkit-filter: grayscale(60%);
+	-moz-filter: grayscale(60%);
+	filter: grayscale(60%);
 	width:100%;
 	border: 1px solid #d3d3d3;
 }
 .project img:hover {
-	-webkit-filter: grayscale(60%);
-	-moz-filter: grayscale(60%);
-	filter: grayscale(60%);
+	-webkit-filter: grayscale(0%);
+	-moz-filter: grayscale(0%);
+	filter: grayscale(0%);
 	width:100%;
 }
 .project h1 {
