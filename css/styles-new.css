@@ -132,7 +132,7 @@ a:hover{
 }
 @media all and (max-width: 630px) {
 	#projectnav .navitem {
-		margin:0px 20px;
+		margin:0px 10px;
 	}
 }
 #projectnav .active {
