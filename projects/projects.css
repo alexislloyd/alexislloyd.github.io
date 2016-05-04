@@ -82,6 +82,10 @@ a:hover {
 @media all and (max-width: 630px) {
 	#header {
 		padding:0px;
+		margin: 0px;
+	}
+	#header p {
+		margin:30px;
 	}
 }
 #subhed {

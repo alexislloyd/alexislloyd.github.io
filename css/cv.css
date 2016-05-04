@@ -29,6 +29,7 @@ a:hover {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 	font-size: 4em;
+	line-height:100%;
 	text-transform: uppercase;
 	text-align: center;
 	padding: 2% 0px;
@@ -46,6 +47,16 @@ a:hover {
 }
 #header a:hover {
 	text-decoration: none;
+}
+
+@media all and (max-width: 630px) {
+	#header {
+		padding:0px;
+		margin: 0px;
+	}
+	#header p {
+		margin:20px;
+	}
 }
 
 /* home */
