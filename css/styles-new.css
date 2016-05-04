@@ -83,7 +83,7 @@ a:hover{
 		margin: 0px;
 	}
 	#header p {
-		margin:30px;
+		margin:20px;
 	}
 }
 #subhed {
@@ -129,6 +129,11 @@ a:hover{
 	text-transform: uppercase;
 	font-family:'Inconsolata',Helvetica, Arial, sans-serif;
 	font-weight: 700;
+}
+@media all and (max-width: 630px) {
+	#projectnav .navitem {
+		margin:0px 20px;
+	}
 }
 #projectnav .active {
 	color: inherit;
