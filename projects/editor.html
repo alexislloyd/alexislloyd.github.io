@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Alexis Lloyd: Projects</title>
+
+	<!--styles-->
+	<link rel="stylesheet" href="projects.css" type="text/css" media="screen" charset="utf-8">
+	<link rel="stylesheet" href="../reset.css" type="text/css" media="screen" charset="utf-8">
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Neuton:400,300,400italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+	
+
+
+</head>
+<body>
+	<div id="wrapper">
+
+		<div id="header">
+			<p><a href="http://www.alexislloyd.com">Alexis Lloyd</a></p>
+			<!--<div id="subhed">DESIGN &bull; FUTURES &bull; RESEARCH &bull; CODE</div>-->
+		</div>
+
+		<!--mission-->
+		<div id="project-title">
+			Editor (2015)
+		</div>
+
+		<!--projects-->
+		<div id="project-info">
+			<div class="main-img">
+				<div class="video-container">
+					<iframe src="http://player.vimeo.com/video/133766552?portrait=0" width="500" height="281" frameborder="0"></iframe>
+				</div>
+			</div>
+
+			<p class="role">ROLE: Creative direction, Concept, Design, Front-end development.<br />
+COLLABORATORS: Mike Dewar</p>
+
+			<p>
+			Tagging and annotation have long been some of the most important tasks that a news organization undertakes. The tags that we attach to articles enable nearly everything that happens to that article after publication: how we recommend related content to readers, how search engines index our site, how ads are targeted and more.
+</p><p>
+Currently, at The New York Times, those tags are applied at the article level. Yet when we look at an article we can see that it actually contains many smaller component parts, like a fact, a person, a recipe or an event. If we could begin to annotate and tag these components, it would enable us to do so much more with that information. New devices, especially those with smaller screens, could make use of smaller chunks of content. New products could be created by extracting components from their original article context and recombining them to create collections or new kinds of experiences. And rather than the archive being a file cabinet full of articles, it would become a corpus of structured news information that could be interrogated and reasoned across.
+</p><p>
+Fine-grained annotation within an article is a difficult problem that has historically been approached in two ways, both of which have their own challenges. One approach is computational, building rule sets or machine learning processes to take best guesses at where to apply tags. These approaches can be quite successful, but are still not nearly good enough to stand on their own. The other approach is to have people do the tagging. The person writing the article knows the information needed with a high degree of accuracy, but the burden of work required to highlight and annotate every significant phrase is untenable.
+</p><p>
+Editor is an experimental text editing interface that explores how collaboration between machine learning systems and journalists could afford fine-grained annotation and tagging of news articles. Our approach applies machine learning techniques interactively, as part of the writing process, rather than retroactively. This approach can offload the burden of work to the computational processes, and can create affordances for journalists to augment, edit and correct those processes with their knowledge. 
+</p><p>
+This prototype is comprised of a simple text editor (shown on the left), supported by a set of networked microservices (visualized on the right). The microservices shown here are recurrent neural networks (using <a href="https://code.google.com/p/word2vec/">https://code.google.com/p/word2vec/</a>) that are trained to apply New York Times tags to free text, but you can imagine a host of other services that could do things like try to attribute quotes or that know about specific domains like food or sports. As the journalist is writing in the text editor, every word, phrase and sentence is emitted on to the network so that any microservice can process that text and send relevant metadata back to the editor interface. Annotated phrases are highlighted in the text as it is written. When journalists finish writing, they can simply review the suggested annotations with as little effort as is required to perform a spell check, correcting, verifying or removing tags where needed. Editor also has a contextual menu that allows the journalist to make annotations that only a person would be able to judge, like identifying a pull quote, a fact, a key point, etc.
+</p><p>
+Editor shows how we can augment existing writing and publishing processes to create not just the article as it is written, but a substrate of structured news information that can then be manifested in many different forms, of which the article is only one. In addition, this experiment also touches on new models for publishing and content management. By envisioning a process that is composed of small modules that can freely collaborate and communicate across a network, we can explore alternatives to the monolithic CMS &mdash; ones that may be able to adapt and change more rapidly as our publishing needs evolve.
+</p>
+
+		</div>
+
+		
+
+	</div><!--end wrapper-->
+
+
+
+
+</body>
+</html>
