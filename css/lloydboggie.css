@@ -1,0 +1,71 @@
+a:link, a:visited {
+	color: inherit;
+	text-decoration:underline;
+}
+a:hover {
+	color: #2BB2DD;
+}
+#header {
+	color: #2BB2DD;
+}
+#header p {
+	margin:20px;
+}
+#main, #wrapper {
+	width:80%;
+	max-width: 800px;
+	min-width: 300px;
+	margin: 0px auto 50px;
+}
+/* cv */
+.section {
+	margin:40px 0px 0px 0px;
+	padding: 20px 0px 0px 0px;
+	border-top: 1px solid #ccc;
+}
+#profile {
+	margin:0px;
+}
+.entry {
+	margin:30px 0px;
+}
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 1.4em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #2BB2DD;
+}
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 1em;
+	margin-bottom: 0px;
+	letter-spacing: 1px;
+}
+p, ul {
+	line-height: 1.2em;
+	font-size: 1.1em;
+}
+li {
+	margin:7px 0px;
+}
+.company {
+	font-family: 'Montserrat', sans-serif;
+	margin: 5px 0px 20px 0px;
+	font-size: 0.9em;
+}
+.date {
+	opacity:0.5;
+}
+.school {
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+}
+.awards {
+	margin: 0px 0px 20px 0px;
+	font-size: 1.1em;
+	line-height: 1.3em;
+}
