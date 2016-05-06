@@ -54,6 +54,10 @@ p, ul {
 	line-height: 1.2em;
 	font-size: 1.1em;
 }
+#header p, #header ul {
+	line-height: 1em;
+	font-size: 1em;
+}
 .company {
 	font-family: 'Montserrat', sans-serif;
 	margin: 5px 0px 20px 0px;
