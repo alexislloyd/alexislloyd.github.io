@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Stream</title>
+    <link rel="stylesheet" href="stream.css" media="screen" title="stream">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab:300,400,700" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#keepreading').on('click', function() {
+          $('#more-text').slideToggle();
+          return false;
+        });
+
+        $('#keepreading2').on('click', function() {
+          $('#more-text2').slideToggle();
+          return false;
+        });
+
+        $('body').on('click', '.more-items', function() {
+          console.log($(this).parent())
+          $(this).parent().after('<div class="element hidden-element"><h1>Here is another story</h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <i>Tanta vis admonitionis inest in locis;</i> Non est igitur voluptas bonum. Cum salvum esse flentes sui respondissent, rogavit essentne fusi hostes. Tum Piso: Quoniam igitur aliquid omnes, quid Lucius noster? <b>Sed potestne rerum maior esse dissensio?</b> Duo Reges: constructio interrete. Cur, nisi quod turpis oratio est? Quo modo autem philosophus loquitur? Quae cum essent dicta, finem fecimus et ambulandi et disputandi. Nam si amitti vita beata potest, beata esse non potest. </p><p><a href="#" >Proclivi currit oratio.</a> Non igitur de improbo, sed de callido improbo quaerimus, qualis Q. Quo modo autem optimum, si bonum praeterea nullum est? Non enim iam stirpis bonum quaeret, sed animalis. </p><ul><li>Nam et a te perfici istam disputationem volo, nec tua mihi oratio longa videri potest.</li><li>Quae qui non vident, nihil umquam magnum ac cognitione dignum amaverunt.</li></ul><a href="#" class="more-items">More like this</a><br class="clear" /></div>');
+          $(this).parent().next().slideDown();
+          return false;
+        })
+
+      })
+
+    </script>
+  </head>
+  <body>
+      <div id="container">
+          <!--ELEMENT-->
+          <div class="element">
+            <h1>Sed ut perspiciatis unde omnis iste</h1>
+              <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+              </p>
+              <p>
+                Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
+              </p>
+              <a href="#" class="more-items">More like this</a><br class="clear" />
+          </div>
+
+          <!--ELEMENT-->
+          <div class="element">
+            <h1>Quae similitudo in genere etiam</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid nunc honeste dicit? Nemo igitur esse beatus potest. Scaevolam M. <b>Nam de isto magna dissensio est.</b> </p>
+
+            <ul>
+            	<li>Quid ergo attinet dicere: Nihil haberem, quod reprehenderem, si finitas cupiditates haberent?</li>
+            	<li>Idemne, quod iucunde?</li>
+            	<li>Quae similitudo in genere etiam humano apparet.</li>
+            	<li>Sed finge non solum callidum eum, qui aliquid improbe faciat, verum etiam praepotentem, ut M.</li>
+            	<li>Tu vero, inquam, ducas licet, si sequetur;</li>
+            	<li>A primo, ut opinor, animantium ortu petitur origo summi boni.</li>
+            </ul>
+
+            <a href="#" class="more-items">More like this</a><br class="clear" />
+          </div>
+
+          <!--ELEMENT-->
+          <div class="element">
+            <h1>Quam si explicavisset, non tam haesitaret</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ergo, si semel tristior effectus est, hilara vita amissa est? Sin laboramus, quis est, qui alienae modum statuat industriae? Ergo ita: non posse honeste vivi, nisi honeste vivatur? <a href='#' target='_blank'>Facillimum id quidem est, inquam.</a> <b>Hos contra singulos dici est melius.</b> <b>Duo Reges: constructio interrete.</b> In qua quid est boni praeter summam voluptatem, et eam sempiternam? <i>Sed ad illum redeo.</i> </p>
+            <a href="#" class="more" id="keepreading">Keep reading (moderate length) &#8964;</a>
+
+            <!--start hidden more text-->
+            <div id="more-text">
+              <p><b>Equidem e Cn.</b> Virtutis, magnitudinis animi, patientiae, fortitudinis fomentis dolor mitigari solet. Itaque vides, quo modo loquantur, nova verba fingunt, deserunt usitata. Beatus autem esse in maximarum rerum timore nemo potest. Immo videri fortasse. <i>Non semper, inquam;</i> </p>
+
+              <p><i>Quis istud possit, inquit, negare?</i> Hosne igitur laudas et hanc eorum, inquam, sententiam sequi nos censes oportere? Estne, quaeso, inquam, sitienti in bibendo voluptas? <a href='#' target='_blank'>Tum mihi Piso: Quid ergo?</a> Nam memini etiam quae nolo, oblivisci non possum quae volo. </p>
+
+              <p>Bonum incolumis acies: misera caecitas. Ut non sine causa ex iis memoriae ducta sit disciplina. Tibi hoc incredibile, quod beatissimum. <i>Et quidem, inquit, vehementer errat;</i> Idem iste, inquam, de voluptate quid sentit? Sed haec quidem liberius ab eo dicuntur et saepius. Haec dicuntur fortasse ieiunius; Facillimum id quidem est, inquam. Eorum enim est haec querela, qui sibi cari sunt seseque diligunt. </p>
+
+              <p>At ille non pertimuit saneque fidenter: Istis quidem ipsis verbis, inquit; <a href='#' target='_blank'>At certe gravius.</a> Qui ita affectus, beatum esse numquam probabis; Illud urgueam, non intellegere eum quid sibi dicendum sit, cum dolorem summum malum esse dixerit. Luxuriam non reprehendit, modo sit vacua infinita cupiditate et timore. Aut unde est hoc contritum vetustate proverbium: quicum in tenebris? Sed ego in hoc resisto; <i>Contineo me ab exemplis.</i> </p>
+
+              <p>Quamquam non negatis nos intellegere quid sit voluptas, sed quid ille dicat. Zenonis est, inquam, hoc Stoici. <a href='#' target='_blank'>Iam enim adesse poterit.</a> Quid, si etiam iucunda memoria est praeteritorum malorum? <a href='#' target='_blank'>Praeclarae mortes sunt imperatoriae;</a> Quam ob rem tandem, inquit, non satisfacit? Haeret in salebra. </p>
+
+              <p>Illa videamus, quae a te de amicitia dicta sunt. Atqui reperies, inquit, in hoc quidem pertinacem; Et quod est munus, quod opus sapientiae? An me, inquis, tam amentem putas, ut apud imperitos isto modo loquar? <a href='#' target='_blank'>Sit sane ista voluptas.</a> <a href='#' target='_blank'>Ego vero isti, inquam, permitto.</a> </p>
+
+              <p><b>Omnia peccata paria dicitis.</b> Quod quidem iam fit etiam in Academia. <b>Et nemo nimium beatus est;</b> Mihi, inquam, qui te id ipsum rogavi? Recte, inquit, intellegis. <b>Poterat autem inpune;</b> </p>
+            </div>
+            <!--end hidden more text-->
+
+            <a href="#" class="more-items">More like this</a><br class="clear" />
+          </div>
+
+          <!--ELEMENT-->
+          <div class="element">
+            <h1>Vitae suscipit postulant vim id, no nec autem</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. </p>
+
+            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit</b>. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. <b>Curabitur tortor</b>. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. </p>
+
+            <a href="#" class="more-items">More like this</a><br class="clear" />
+        </div>
+
+          <!--ELEMENT-->
+          <div class="element">
+            <h1>Duo Reges: constructio interrete</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vide, quantum, inquam, fallare, Torquate. <a href='#' target='_blank'>Etiam beatissimum?</a> Videsne quam sit magna dissensio? Duo Reges: constructio interrete. <a href='#' target='_blank'>Age sane, inquam.</a> <b>Polycratem Samium felicem appellabant.</b> </p>
+
+            <p>Quonam, inquit, modo? Primum quid tu dicis breve? Ratio quidem vestra sic cogit. At certe gravius. </p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gerendus est mos, modo recte sentiat. Deinde dolorem quem maximum? <a href='http://loripsum.net/' target='_blank'>Id enim natura desiderat.</a> <a href='http://loripsum.net/' target='_blank'>Minime vero, inquit ille, consentit.</a> Haec para/doca illi, nos admirabilia dicamus. Atqui, inquam, Cato, si istud optinueris, traducas me ad te totum licebit. </p>
+
+            <a href="#" class="more" id="keepreading2">Keep reading (long one!) &#8964;</a>
+
+            <!--begin more-text2-->
+            <div id="more-text2">
+                  <p>Duo Reges: constructio interrete. <b>Ita prorsus, inquam;</b> <a href='http://loripsum.net/' target='_blank'>Sed hoc sane concedamus.</a> <a href='http://loripsum.net/' target='_blank'>Primum divisit ineleganter;</a> Teneo, inquit, finem illi videri nihil dolere. Ne in odium veniam, si amicum destitero tueri. </p>
+
+                  <p><a href='http://loripsum.net/' target='_blank'>Certe non potest.</a> Negabat igitur ullam esse artem, quae ipsa a se proficisceretur; Rapior illuc, revocat autem Antiochus, nec est praeterea, quem audiamus. Atque haec coniunctio confusioque virtutum tamen a philosophis ratione quadam distinguitur. <b>Erat enim Polemonis.</b> Neutrum vero, inquit ille. Nihil opus est exemplis hoc facere longius. Paupertas si malum est, mendicus beatus esse nemo potest, quamvis sit sapiens. Suam denique cuique naturam esse ad vivendum ducem. Comprehensum, quod cognitum non habet? </p>
+
+                  <p>At enim, qua in vita est aliquid mali, ea beata esse non potest. <a href='http://loripsum.net/' target='_blank'>Memini vero, inquam;</a> Similiter sensus, cum accessit ad naturam, tuetur illam quidem, sed etiam se tuetur; Summum ením bonum exposuit vacuitatem doloris; Duarum enim vitarum nobis erunt instituta capienda. </p>
+
+                  <p><a href='http://loripsum.net/' target='_blank'>Nescio quo modo praetervolavit oratio.</a> Hoc sic expositum dissimile est superiori. Egone quaeris, inquit, quid sentiam? Illis videtur, qui illud non dubitant bonum dicere -; <a href='http://loripsum.net/' target='_blank'>Quibusnam praeteritis?</a> <i>Hoc non est positum in nostra actione.</i> Cur tantas regiones barbarorum pedibus obiit, tot maria transmisit? </p>
+
+                  <p><a href='http://loripsum.net/' target='_blank'>Et quidem, inquit, vehementer errat;</a> <b>Bonum patria: miserum exilium.</b> Aliud igitur esse censet gaudere, aliud non dolere. Addidisti ad extremum etiam indoctum fuisse. Sit ista in Graecorum levitate perversitas, qui maledictis insectantur eos, a quibus de veritate dissentiunt. <b>Quae cum dixisset, finem ille.</b> <a href='http://loripsum.net/' target='_blank'>Bonum integritas corporis: misera debilitas.</a> Itaque his sapiens semper vacabit. </p>
+
+                  <p>Id Sextilius factum negabat. Cur post Tarentum ad Archytam? Tu quidem reddes; <a href='http://loripsum.net/' target='_blank'>Quo modo autem philosophus loquitur?</a> <i>An tu me de L.</i> Si enim, ut mihi quidem videtur, non explet bona naturae voluptas, iure praetermissa est; <a href='http://loripsum.net/' target='_blank'>Quis istud possit, inquit, negare?</a> Ut optime, secundum naturam affectum esse possit. </p>
+
+                  <p>Putabam equidem satis, inquit, me dixisse. <a href='http://loripsum.net/' target='_blank'>Restatis igitur vos;</a> <b>Quae duo sunt, unum facit.</b> Cur id non ita fit? </p>
+
+                  <p>Obsecro, inquit, Torquate, haec dicit Epicurus? Ita relinquet duas, de quibus etiam atque etiam consideret. Quis est autem dignus nomine hominis, qui unum diem totum velit esse in genere isto voluptatis? <a href='http://loripsum.net/' target='_blank'>Nulla erit controversia.</a> </p>
+
+                  <p>Eam stabilem appellas. <i>Qua tu etiam inprudens utebare non numquam.</i> Quoniam, si dis placet, ab Epicuro loqui discimus. Non pugnem cum homine, cur tantum habeat in natura boni; Quamquam te quidem video minime esse deterritum. A primo, ut opinor, animantium ortu petitur origo summi boni. <b>Rationis enim perfectio est virtus;</b> Quid est igitur, cur ita semper deum appellet Epicurus beatum et aeternum? Non est enim vitium in oratione solum, sed etiam in moribus. Quid ergo? </p>
+
+                  <p>Sapiens autem semper beatus est et est aliquando in dolore; Summum a vobis bonum voluptas dicitur. Illud dico, ea, quae dicat, praeclare inter se cohaerere. Cum salvum esse flentes sui respondissent, rogavit essentne fusi hostes. Quod, inquit, quamquam voluptatibus quibusdam est saepe iucundius, tamen expetitur propter voluptatem. Satisne ergo pudori consulat, si quis sine teste libidini pareat? Quis enim est, qui non videat haec esse in natura rerum tria? Philosophi autem in suis lectulis plerumque moriuntur. </p>
+
+                  <p><a href='http://loripsum.net/' target='_blank'>Beatum, inquit.</a> Ratio enim nostra consentit, pugnat oratio. Ita fit cum gravior, tum etiam splendidior oratio. At iam decimum annum in spelunca iacet. At hoc in eo M. </p>
+
+                  <p>Sed erat aequius Triarium aliquid de dissensione nostra iudicare. Quam si explicavisset, non tam haesitaret. Tum ille timide vel potius verecunde: Facio, inquit. Tollenda est atque extrahenda radicitus. Quo igitur, inquit, modo? Nescio quo modo praetervolavit oratio. </p>
+
+                  <p>Numquam facies. Deinde disputat, quod cuiusque generis animantium statui deceat extremum. Sed virtutem ipsam inchoavit, nihil amplius. Quae contraria sunt his, malane? </p>
+
+                  <p>Et nemo nimium beatus est; Nulla profecto est, quin suam vim retineat a primo ad extremum. Cur fortior sit, si illud, quod tute concedis, asperum et vix ferendum putabit? Cum praesertim illa perdiscere ludus esset. </p>
+            </div> <!--end more text2-->
+
+
+
+            <a href="#" class="more-items">More like this</a><br class="clear" />
+          </div>
+
+          <!--ELEMENT-->
+          <div class="element">
+            <h1>Conferam tecum, quam cuique verso rem subicias &mdash; Sedulo, inquam, faciam</h1>
+
+            <p><b>Erit enim mecum, si tecum erit.</b> Tu quidem reddes; Sin aliud quid voles, postea. </p>
+
+            <ul>
+            	<li>Nec tamen ullo modo summum pecudis bonum et hominis idem mihi videri potest.</li>
+            	<li>Istam voluptatem perpetuam quis potest praestare sapienti?</li>
+            	<li>Ergo id est convenienter naturae vivere, a natura discedere.</li>
+            	<li>Sin est etiam corpus, ista explanatio naturae nempe hoc effecerit, ut ea, quae ante explanationem tenebamus, relinquamus.</li>
+            </ul>
+
+            <p>Honesta oratio, Socratica, Platonis etiam. Quid iudicant sensus? Equidem e Cn. Et nemo nimium beatus est; Confecta res esset. Quae cum dixisset, finem ille. </p>
+
+            <a href="#" class="more-items">More like this</a><br class="clear" />
+          </div>
+      </div>
+  </body>
+</html>
