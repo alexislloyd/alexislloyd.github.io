@@ -61,6 +61,8 @@ a.more-items, a.more {
 h1 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
+  font-size: 0.9em;
+  line-height: 1.1em;
 }
 
 #more-text, #more-text2 {
