@@ -21,9 +21,8 @@
         });
 
         $('body').on('click', '.more-items', function() {
-          console.log($(this).parent())
-          $(this).parent().after('<div class="element hidden-element"><h1>Here is another story</h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <i>Tanta vis admonitionis inest in locis;</i> Non est igitur voluptas bonum. Cum salvum esse flentes sui respondissent, rogavit essentne fusi hostes. Tum Piso: Quoniam igitur aliquid omnes, quid Lucius noster? <b>Sed potestne rerum maior esse dissensio?</b> Duo Reges: constructio interrete. Cur, nisi quod turpis oratio est? Quo modo autem philosophus loquitur? Quae cum essent dicta, finem fecimus et ambulandi et disputandi. Nam si amitti vita beata potest, beata esse non potest. </p><p><a href="#" >Proclivi currit oratio.</a> Non igitur de improbo, sed de callido improbo quaerimus, qualis Q. Quo modo autem optimum, si bonum praeterea nullum est? Non enim iam stirpis bonum quaeret, sed animalis. </p><ul><li>Nam et a te perfici istam disputationem volo, nec tua mihi oratio longa videri potest.</li><li>Quae qui non vident, nihil umquam magnum ac cognitione dignum amaverunt.</li></ul><a href="#" class="more-items">More like this</a><br class="clear" /></div>');
-          $(this).parent().next().slideDown();
+          $(this).parent().parent().after('<div class="element hidden-element"><h1>Here is another story</h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <i>Tanta vis admonitionis inest in locis;</i> Non est igitur voluptas bonum. Cum salvum esse flentes sui respondissent, rogavit essentne fusi hostes. Tum Piso: Quoniam igitur aliquid omnes, quid Lucius noster? <b>Sed potestne rerum maior esse dissensio?</b> Duo Reges: constructio interrete. Cur, nisi quod turpis oratio est? Quo modo autem philosophus loquitur? Quae cum essent dicta, finem fecimus et ambulandi et disputandi. Nam si amitti vita beata potest, beata esse non potest. </p><p><a href="#" >Proclivi currit oratio.</a> Non igitur de improbo, sed de callido improbo quaerimus, qualis Q. Quo modo autem optimum, si bonum praeterea nullum est? Non enim iam stirpis bonum quaeret, sed animalis. </p><ul><li>Nam et a te perfici istam disputationem volo, nec tua mihi oratio longa videri potest.</li><li>Quae qui non vident, nihil umquam magnum ac cognitione dignum amaverunt.</li></ul><p><a href="#" class="more-items">More like this</a></p><br class="clear" /></div>');
+          $(this).parent().parent().next().slideDown();
           return false;
         })
 
@@ -42,7 +41,7 @@
               <p>
                 Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
               </p>
-              <a href="#" class="more-items">More like this</a><br class="clear" />
+              <p><a href="#" class="more-items">More like this</a></p><br class="clear" />
           </div>
 
           <!--ELEMENT-->
@@ -59,7 +58,7 @@
             	<li>A primo, ut opinor, animantium ortu petitur origo summi boni.</li>
             </ul>
 
-            <a href="#" class="more-items">More like this</a><br class="clear" />
+            <p><a href="#" class="more-items">More like this</a></p><br class="clear" />
           </div>
 
           <!--ELEMENT-->
@@ -94,7 +93,7 @@
             </div>
             <!--end hidden more text-->
 
-            <a href="#" class="more-items">More like this</a><br class="clear" />
+            <br class="clear" /><p><a href="#" class="more-items">More like this</a></p><br class="clear" />
           </div>
 
           <!--ELEMENT-->
@@ -104,7 +103,7 @@
 
             <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit</b>. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. <b>Curabitur tortor</b>. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. </p>
 
-            <a href="#" class="more-items">More like this</a><br class="clear" />
+            <p><a href="#" class="more-items">More like this</a></p><br class="clear" />
         </div>
 
           <!--ELEMENT-->
@@ -124,7 +123,7 @@
 
                   <p>Satisne vobis videor pro meo iure in vestris auribus commentatus? Mene ergo et Triarium dignos existimas, apud quos turpiter loquare? Nunc ita separantur, ut disiuncta sint, quo nihil potest esse perversius. <i>Graece donan, Latine voluptatem vocant.</i> <i>Optime, inquam.</i> Hoc non est positum in nostra actione. Stoici scilicet. </p>
 
-                  <p><mark>Restinguet citius, si ardentem acceperit.</mark> Huius ego nunc auctoritatem sequens idem faciam. Si quae forte-possumus. Si qua in iis corrigere voluit, deteriora fecit. Hoc non est positum in nostra actione. <a href='#' target='_blank'>Nihilo magis.</a> Hoc etsi multimodis reprehendi potest, tamen accipio, quod dant. </p>
+                  <p>Restinguet citius, si ardentem acceperit. Huius ego nunc auctoritatem sequens idem faciam. Si quae forte-possumus. Si qua in iis corrigere voluit, deteriora fecit. Hoc non est positum in nostra actione. <a href='#' target='_blank'>Nihilo magis.</a> Hoc etsi multimodis reprehendi potest, tamen accipio, quod dant. </p>
 
                   <p>Negat enim summo bono afferre incrementum diem. <b>Memini vero, inquam;</b> Hoc est dicere: Non reprehenderem asotos, si non essent asoti. Quarum ambarum rerum cum medicinam pollicetur, luxuriae licentiam pollicetur. Hosne igitur laudas et hanc eorum, inquam, sententiam sequi nos censes oportere? Nulla profecto est, quin suam vim retineat a primo ad extremum. <i>ALIO MODO.</i> </p>
 
@@ -148,11 +147,11 @@
 
                   <p>Quid enim de amicitia statueris utilitatis causa expetenda vides. Eiuro, inquit adridens, iniquum, hac quidem de re; Qua tu etiam inprudens utebare non numquam. <b>Cum audissem Antiochum, Brute, ut solebam, cum M.</b> Itaque haec cum illis est dissensio, cum Peripateticis nulla sane. Nullus est igitur cuiusquam dies natalis. <a href='#' target='_blank'>Ut pulsi recurrant?</a> <a href='#' target='_blank'>At multis se probavit.</a> Quamvis enim depravatae non sint, pravae tamen esse possunt. Si verbum sequimur, primum longius verbum praepositum quam bonum. Respondeat totidem verbis. </p>
 
-                  <p>Pugnant Stoici cum Peripateticis. Atqui reperies, inquit, in hoc quidem pertinacem; Nobis aliter videtur, recte secusne, postea; Cur haec eadem Democritus? Quonam modo? <mark>Graccho, eius fere, aequalí?</mark> </p>
+                  <p>Pugnant Stoici cum Peripateticis. Atqui reperies, inquit, in hoc quidem pertinacem; Nobis aliter videtur, recte secusne, postea; Cur haec eadem Democritus? Quonam modo? Graccho, eius fere, aequalí? </p>
 
                   <p>Venit ad extremum; Non enim, si omnia non sequebatur, idcirco non erat ortus illinc. Nec vero alia sunt quaerenda contra Carneadeam illam sententiam. Qui potest igitur habitare in beata vita summi mali metus? Te enim iudicem aequum puto, modo quae dicat ille bene noris. <a href='#' target='_blank'>Quid autem habent admirationis, cum prope accesseris?</a> Hoc ipsum elegantius poni meliusque potuit. Tollitur beneficium, tollitur gratia, quae sunt vincla concordiae. </p>
 
-                  <p><a href='#' target='_blank'>Quo modo autem philosophus loquitur?</a> <mark>Nihil enim hoc differt.</mark> Hoc Hieronymus summum bonum esse dixit. Eorum enim omnium multa praetermittentium, dum eligant aliquid, quod sequantur, quasi curta sententia; Sint ista Graecorum; A quibus propter discendi cupiditatem videmus ultimas terras esse peragratas. Summae mihi videtur inscitiae. <a href='#' target='_blank'>Negare non possum.</a> </p>
+                  <p><a href='#' target='_blank'>Quo modo autem philosophus loquitur?</a> Nihil enim hoc differt. Hoc Hieronymus summum bonum esse dixit. Eorum enim omnium multa praetermittentium, dum eligant aliquid, quod sequantur, quasi curta sententia; Sint ista Graecorum; A quibus propter discendi cupiditatem videmus ultimas terras esse peragratas. Summae mihi videtur inscitiae. <a href='#' target='_blank'>Negare non possum.</a> </p>
 
                   <p>Cum autem negant ea quicquam ad beatam vitam pertinere, rursus naturam relinquunt. Quae autem natura suae primae institutionis oblita est? Quae animi affectio suum cuique tribuens atque hanc, quam dico. <b>At enim hic etiam dolore.</b> Bonum integritas corporis: misera debilitas. <i>Istam voluptatem, inquit, Epicurus ignorat?</i> Qua tu etiam inprudens utebare non numquam. Non est igitur voluptas bonum. </p>
 
@@ -164,7 +163,7 @@
 
                   <p>Videamus animi partes, quarum est conspectus illustrior; Dat enim intervalla et relaxat. Itaque vides, quo modo loquantur, nova verba fingunt, deserunt usitata. </p>
 
-                  <p>Terram, mihi crede, ea lanx et maria deprimet. Unum nescio, quo modo possit, si luxuriosus sit, finitas cupiditates habere. <b>Quis Aristidem non mortuum diligit?</b> <mark>Age sane, inquam.</mark> Non dolere, inquam, istud quam vim habeat postea videro; Verba tu fingas et ea dicas, quae non sentias? </p>
+                  <p>Terram, mihi crede, ea lanx et maria deprimet. Unum nescio, quo modo possit, si luxuriosus sit, finitas cupiditates habere. <b>Quis Aristidem non mortuum diligit?</b> Age sane, inquam. Non dolere, inquam, istud quam vim habeat postea videro; Verba tu fingas et ea dicas, quae non sentias? </p>
 
                   <p><b>Refert tamen, quo modo.</b> Consequens enim est et post oritur, ut dixi. Vos autem cum perspicuis dubia debeatis illustrare, dubiis perspicua conamini tollere. <b>Verum hoc idem saepe faciamus.</b> Iam in altera philosophiae parte. Sin dicit obscurari quaedam nec apparere, quia valde parva sint, nos quoque concedimus; In qua quid est boni praeter summam voluptatem, et eam sempiternam? </p>
 
@@ -175,7 +174,7 @@
 
 
 
-            <a href="#" class="more-items">More like this</a><br class="clear" />
+            <br class="clear" /><p><a href="#" class="more-items">More like this</a></p><br class="clear" />
           </div>
 
           <!--ELEMENT-->
@@ -193,7 +192,7 @@
 
             <p>Honesta oratio, Socratica, Platonis etiam. Quid iudicant sensus? Equidem e Cn. Et nemo nimium beatus est; Confecta res esset. Quae cum dixisset, finem ille. </p>
 
-            <a href="#" class="more-items">More like this</a><br class="clear" />
+            <p><a href="#" class="more-items">More like this</a></p><br class="clear" />
           </div>
       </div>
   </body>
