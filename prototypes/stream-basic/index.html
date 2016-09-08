@@ -35,6 +35,11 @@
           return false;
         });
 
+        $('#collapse').on('click', function() {
+          $('#more-text').slideUp();
+          return false;
+        });
+
         $('body').on('click', '.more-items', function() {
           $(this).parent().parent().after('<div class="element hidden-element"><h1>Here is another story</h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <i>Tanta vis admonitionis inest in locis;</i> Non est igitur voluptas bonum. Cum salvum esse flentes sui respondissent, rogavit essentne fusi hostes. Tum Piso: Quoniam igitur aliquid omnes, quid Lucius noster? <b>Sed potestne rerum maior esse dissensio?</b> Duo Reges: constructio interrete. Cur, nisi quod turpis oratio est? Quo modo autem philosophus loquitur? Quae cum essent dicta, finem fecimus et ambulandi et disputandi. Nam si amitti vita beata potest, beata esse non potest. </p><p><a href="#" >Proclivi currit oratio.</a> Non igitur de improbo, sed de callido improbo quaerimus, qualis Q. Quo modo autem optimum, si bonum praeterea nullum est? Non enim iam stirpis bonum quaeret, sed animalis. </p><ul><li>Nam et a te perfici istam disputationem volo, nec tua mihi oratio longa videri potest.</li><li>Quae qui non vident, nihil umquam magnum ac cognitione dignum amaverunt.</li></ul><p class="bottom"><img src="img/buttons.png" class="buttons" /><a href="#" class="more-items">More like this</a></p><br class="clear" /></div>');
           $(this).parent().parent().next().slideDown();
@@ -52,9 +57,9 @@
             <h1>Yellen Signals Rate Increase (Again)</h1>
               <img src="img/yellen2.jpg" />
               <p>
-              “I believe the case for an increase in the federal funds rate has strengthened in recent months,”  is the one quote from Janet Yellen’s speech in Jackson Hole anybody is reading.
+              "I believe the case for an increase in the federal funds rate has strengthened in recent months,"  is the one quote from Janet Yellen’s speech in Jackson Hole anybody is reading.
             </p><p>
-              Obama’s former economic advisor Austan Goolsbee tweets the Yellen remarks echo “Fed comments from 2015, 2014, 2013, 2012....” Prediction markets agree: Reuters says <strong>rate hike probabilities back to where they were before speech</strong>; 28% for Sept, 70% for Dec.
+              Obama’s former economic advisor Austan Goolsbee tweets the Yellen remarks echo "Fed comments from 2015, 2014, 2013, 2012...." Prediction markets agree: Reuters says <strong>rate hike probabilities back to where they were before speech</strong>; 28% for Sept, 70% for Dec.
             </p><p>
               Stocks went down then up a bit, bond yields went up then down a bit, the dollar flat; <strong>enjoy the weather in Wyoming everybody!</strong>
               </p>
@@ -68,9 +73,9 @@
           <div class="element">
             <h1>Apple Ordered to Repay $14.5B in Illegal Tax Benefits</h1>
             <p>
-              EU rules Apple received <strong>13b Euros in illegal aid from Ireland</strong>, which let co. pay “substantially less tax” than other firms. <a href="#">Full EU statement »</a>
+              EU rules Apple received <strong>13b Euros in illegal aid from Ireland</strong>, which let co. pay "substantially less tax" than other firms. <a href="#">Full EU statement »</a>
             </p><p>
-              Apple shares are down 2% in Europe; remember it’s one of the richest companies on earth with more than <strong>$60b in cash and short-term investments</strong>. More importantly, the EU ruling will likely put tension on EU/US relations, as the WSJ reported yesterday. U.S. Treasury has said the EU actions could “reverse international progress” and <strong>Congress could respond with retaliatory taxes</strong>.
+              Apple shares are down 2% in Europe; remember it’s one of the richest companies on earth with more than <strong>$60b in cash and short-term investments</strong>. More importantly, the EU ruling will likely put tension on EU/US relations, as the WSJ reported yesterday. U.S. Treasury has said the EU actions could "reverse international progress" and <strong>Congress could respond with retaliatory taxes</strong>.
 
             </p>
 
@@ -101,38 +106,84 @@
           </p><p>
             <a href="https://www.jpmorganchase.com/corporate/news/stories/pro-neighborhoods-main.htm"><strong>Get involved or take advantage of the program »</strong></a>
             </p>
-            <!--<a href="#" class="more" id="keepreading">Keep reading (555 words) &#8964;</a>-->
-
-            <!--start hidden more text-->
-            <div id="more-text">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ego vero isti, inquam, permitto. An dolor longissimus quisque miserrimus, voluptatem non optabiliorem diuturnitas facit? Eaedem enim utilitates poterunt eas labefactare atque pervertere. Non enim, si omnia non sequebatur, idcirco non erat ortus illinc. Duo Reges: constructio interrete. Mihi vero, inquit, placet agi subtilius et, ut ipse dixisti, pressius. Sit enim idem caecus, debilis. Atque haec coniunctio confusioque virtutum tamen a philosophis ratione quadam distinguitur. </p>
-
-                      <p>Quis enim redargueret? Quis Pullum Numitorium Fregellanum, proditorem, quamquam rei publicae nostrae profuit, non odit? Quis Aristidem non mortuum diligit? Immo videri fortasse. <b>Ita prorsus, inquam;</b> Conferam tecum, quam cuique verso rem subicias; Scaevola tribunus plebis ferret ad plebem vellentne de ea re quaeri. </p>
-
-                      <p><i>Pauca mutat vel plura sane;</i> Haec quo modo conveniant, non sane intellego. Quasi ego id curem, quid ille aiat aut neget. <a href='#' target='_blank'>Hunc vos beatum;</a> Nonne igitur tibi videntur, inquit, mala? <b>Illud non continuo, ut aeque incontentae.</b> Unum nescio, quo modo possit, si luxuriosus sit, finitas cupiditates habere. Ac ne plura complectar-sunt enim innumerabilia-, bene laudata virtus voluptatis aditus intercludat necesse est. </p>
-
-                      <p>Callipho ad virtutem nihil adiunxit nisi voluptatem, Diodorus vacuitatem doloris. <a href='#' target='_blank'>Gloriosa ostentatio in constituendo summo bono.</a> Paulum, cum regem Persem captum adduceret, eodem flumine invectio? <b>Quod cum dixissent, ille contra.</b> <b>Falli igitur possumus.</b> Quid igitur, inquit, eos responsuros putas? Idque testamento cavebit is, qui nobis quasi oraculum ediderit nihil post mortem ad nos pertinere? Illa argumenta propria videamus, cur omnia sint paria peccata. Hic ego: Pomponius quidem, inquam, noster iocari videtur, et fortasse suo iure. Quem Tiberina descensio festo illo die tanto gaudio affecit, quanto L. </p>
-
-                      <p>Idemne potest esse dies saepius, qui semel fuit? Aliter enim nosmet ipsos nosse non possumus. <i>Quo modo?</i> Verum esto: verbum ipsum voluptatis non habet dignitatem, nec nos fortasse intellegimus. </p>
-
-                      <p><i>Respondeat totidem verbis.</i> Et harum quidem rerum facilis est et expedita distinctio. <a href='#' target='_blank'>In schola desinis.</a> Si enim ita est, vide ne facinus facias, cum mori suadeas. Quid de Platone aut de Democrito loquar? Si enim ad populum me vocas, eum. Sedulo, inquam, faciam. Sed ad haec, nisi molestum est, habeo quae velim. </p>
-
-                      <p>Atqui reperies, inquit, in hoc quidem pertinacem; At multis se probavit. Neque solum ea communia, verum etiam paria esse dixerunt. Plane idem, inquit, et maxima quidem, qua fieri nulla maior potest. Sed haec nihil sane ad rem; </p>
-
-                      <p>Et ais, si una littera commota sit, fore tota ut labet disciplina. Quod totum contra est. Cetera illa adhibebat, quibus demptis negat se Epicurus intellegere quid sit bonum. Honesta oratio, Socratica, Platonis etiam. Quem Tiberina descensio festo illo die tanto gaudio affecit, quanto L. Si autem id non concedatur, non continuo vita beata tollitur. Nihilne est in his rebus, quod dignum libero aut indignum esse ducamus? Duae sunt enim res quoque, ne tu verba solum putes. Aliter homines, aliter philosophos loqui putas oportere? </p>
-
-                      <p><a href='#' target='_blank'>Est, ut dicis, inquit;</a> Et nemo nimium beatus est; Et harum quidem rerum facilis est et expedita distinctio. Post enim Chrysippum eum non sane est disputatum. Habent enim et bene longam et satis litigiosam disputationem. Laboro autem non sine causa; </p>
-
-                      <p>Dempta enim aeternitate nihilo beatior Iuppiter quam Epicurus; Prioris generis est docilitas, memoria; <i>Utram tandem linguam nescio?</i> Ratio enim nostra consentit, pugnat oratio. <i>Laboro autem non sine causa;</i> Hoc ipsum elegantius poni meliusque potuit. An hoc usque quaque, aliter in vita? Esse enim quam vellet iniquus iustus poterat inpune. </p>
-
-
-            </div>
-            <!--end hidden more text-->
 
             <br class="clear" /><p class="bottom">
   <img src="img/buttons.png" class="buttons" />
   <a href="#" class="more-items">More like this</a>
 </p><br class="clear" />
+          </div>
+
+          <!--ELEMENT-->
+          <div class="element">
+            <h1>Obamacare Cracks Down, Sort Of</h1>
+            <p>
+              One reason insurers don’t think Obamacare is stable: <a href="http://healthaffairs.org/blog/2016/01/20/after-insurer-complaints-small-steps-to-toughen-special-enrollment-period-eligibility/">too easy</a> for people to sign up outside of the regular enrollment seasons (so they may not sign up until they’re sick). On Tuesday, the Obama administration <a href="https://www.cms.gov/CCIIO/Resources/Regulations-and-Guidance/Downloads/FAQ-Regarding-Verification-of-SEPs.pdf">announced</a> that it’s going to try something new: verifying that people who sign up outside of regular enrollment are actually eligible to do it.
+            </p><p>
+              <strong>What It Means</strong>: The whole point of Obamacare’s open enrollment periods &mdash; just like companies have for their workers &mdash; is to make sure people don’t wait until they need health care to get insurance. The new step might make sure open enrollment actually means something, but it’s late in the game. (And it’s just a pilot program &mdash; it’s not even happening everywhere.)
+            </p>
+
+            <a href="#" class="more" id="keepreading">Keep reading (474 words) &#8964;</a>
+
+            <!--start hidden more text-->
+            <div id="more-text">
+              <p>
+              In a <a href="https://www.cms.gov/CCIIO/Resources/Regulations-and-Guidance/Downloads/FAQ-Regarding-Verification-of-SEPs.pdf">"Frequently Asked Questions"</a> posting about special enrollments, the Centers for Medicare and Medicaid Services said it will create a pilot program to see what happens if people have to prove they’re eligible before they can sign up.
+              </p><p>
+              Why a pilot program? Why don’t they just change the rules and do it? Because CMS wants to find out how the change would affect things like total enrollment in Obamacare &mdash; which is already lower than projected &mdash; and, importantly, the "risk pool."
+              </p><p>
+              That’s the term for the mix of healthy and sick people insurers are covering in their Obamacare plans. If they don’t get the right mix of people &mdash; not enough healthy people to cover the costs of the sick &mdash; the insurance plans won’t be stable, and more insurers could pull out of the market.
+              </p><p>
+              Keep in mind that two major insurers &mdash; Aetna and UnitedHealth &mdash; have already said they’re going to stop selling health insurance in the Obamacare marketplaces, claiming their costs have been higher than they expected. That’s already going to cut the amount of competition and choices for Obamacare customers. The health consulting firm Avalere estimates that <a href="http://avalere.com/expertise/life-sciences/insights/experts-predict-sharp-decline-in-competition-across-the-aca-exchanges">one third of the country</a> might have no competition in the Obamacare markets next year.
+              </p><p>
+              And since the whole point of those marketplaces was to have choice and competition &mdash; President Obama <a href="http://www.cbsnews.com/news/transcript-obamas-health-care-speech/">compared it</a> to the menu of health care choices members of Congress get &mdash; the program can’t afford to lose more insurers.
+              </p>
+                <div id="obama-graphic">
+                  <p>
+                  <strong>11.1 million</strong>Total Obamacare enrollment
+                  </p><p>
+                  <strong>943,934</strong> Special enrollment signups <br />(first six months of 2015)
+                  </p><p>
+
+                  <div id="reasons" style="background-color: #e6e6e6;">
+                    <p style="margin-top:20px; padding-top:20px; text-transform:uppercase; font-weight:700; border-top:1px solid #ccc;">Reasons</p>
+                    <div style="border-bottom:1px solid #ccc;">
+                        <div style="font-size:0.8em; width:100%;">
+
+                                <p style="display:inline-block;padding-right:15px;"><strong>50%</strong>Lost Their Health Coverage</p>
+                                <p style="display:inline-block;padding-right:15px;"><strong>19%</strong>Ineligible for Medicaid or CHIP</p>
+
+                                <p style="display:inline-block;padding-right:15px;"><strong>15%</strong>Tax Season</p>
+                                <p style="display:inline-block;"><strong>16%</strong>Other</p>
+
+                            <br class="clear" />
+                        </div>
+                      </div>
+                  </div>
+
+                  <p>
+                    <strong>11</strong>
+                  States Affected by Aetna Withdrawal
+                  </p><p>
+                    <strong>16</strong>
+                  States Affected by UnitedHealth Withdrawal
+                  </p><p>
+                    <strong>11.01.16 - 01.31.17</strong>
+                  Next open enrollment season
+                  </p>
+                </div>
+              </p><p>
+              <strong>What to Watch</strong>: Up until now, the big problem with the risk pool &mdash; at least according to health insurers &mdash; is that it has been too easy for people to drop in and out of health coverage, not too hard. When they do that, according to the insurers, they wait until they’re sick and <a href="http://www.nytimes.com/2016/01/10/us/politics/insurers-say-costs-are-climbing-as-more-enroll-past-health-act-deadline.html?_r=0">drive up costs</a> for everyone.
+              </p><p>
+              But if it’s the healthy people &mdash; not the sick people &mdash; who don’t sign up when they have to prove they’re eligible, the insurance plans could become less stable, not more. Last year, <a href="https://www.cms.gov/Newsroom/MediaReleaseDatabase/Fact-sheets/2015-Fact-sheets-items/2015-08-13.html">CMS found</a>, the people who did the special sign-ups were actually younger than the ones who enrolled during the regular season.
+              </p><p>
+              And as law professor and Obamacare expert Timothy Jost <a href="http://healthaffairs.org/blog/2016/09/06/cms-sees-drop-in-special-enrollment-period-selections-plans-further-steps/">points out</a> at the Health Affairs blog, healthy people "may well decide to forego coverage rather than go through the hassle of the confirmation process."
+              </p><p>
+              So watch to see what happens when the pilot gets underway. All CMS is saying, for now, is that it will be sometime next year.
+              </p>
+              <a href="#" class="more" id="collapse">Close &#8963;</a>
+            </div>
+            <!--end hidden more text-->
+
           </div>
 
           <!--ELEMENT-->

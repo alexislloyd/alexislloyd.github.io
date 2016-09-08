@@ -2,6 +2,7 @@ body, html {
   font-family: 'freight-text-pro', serif;
   font-weight: 300;
   font-size:1.1em;
+  color:#333;
 }
 a:link, a:visited, a:active {
 
@@ -101,4 +102,19 @@ h1 {
 
 #more-text, #more-text2 {
   display: none;
+}
+#obama-graphic {
+  background-color: #f2f2f2;
+  width: 100%;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  color:#666;
+  padding: 20px 0px;
+  text-align: center;
+  font-size: 0.8em;
+}
+#obama-graphic strong {
+  font-size: 1.6em;
+  line-height: 1.2em;
+  display: block;
+  padding:10px 10px 0px 10px;
 }
