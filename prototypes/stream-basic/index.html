@@ -12,6 +12,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
+
+        if ($(window).width() < 768) {
+          $('#graph').attr('src', 'img/TrumpRomney2.png')
+        }
+
         $('#keepreading').on('click', function() {
           $('#more-text').slideToggle();
           return false;
@@ -125,7 +130,7 @@
           <!--ELEMENT-->
           <div class="element">
             <h1>Trump on Track to Repeat Romney’s Failures With Minorities in November</h1>
-            <img src="img/TrumpRomney.png" />
+            <img id="graph" src="img/TrumpRomney.png" />
 
             <p class="bottom">
   <img src="img/buttons.png" class="buttons" />
