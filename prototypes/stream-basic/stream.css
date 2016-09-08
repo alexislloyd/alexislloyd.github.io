@@ -1,7 +1,7 @@
 body, html {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'freight-text-pro', serif;
   font-weight: 300;
-  font-size:1em;
+  font-size:1.1em;
 }
 a:link, a:visited, a:active {
 
@@ -19,7 +19,7 @@ p a {
 @media only screen and (max-width: 768px){
 /* mobile */
   #container {
-    width: 95%;
+    width: 100%;
   }
 }
 @media only screen and (min-width: 768px){
@@ -31,7 +31,7 @@ p a {
   }
 }
 .element {
-  padding:20px 0px;
+  padding:20px;
   border-bottom: 1px solid #ccc;
 }
 .hidden-element {
@@ -39,14 +39,28 @@ p a {
   animation-duration: 1.5s;
   display:none;
 }
+.ad {
+  background-color: #e1eff9;
+}
+
+img.buttons {
+  float: left;
+  width:100px !important;
+  padding:20px 0px 0px 0px !important;
+}
 
 .more-items {
   float: right;
+  padding:20px 0px 0px 0px;
 }
 a.more-items, a.more {
   color: #FA6F06;
   text-decoration: none;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size:0.75em;
+}
+a.more-items {
+  text-transform: uppercase;
 }
 @keyframes highlight {
  	0% {
@@ -59,9 +73,19 @@ a.more-items, a.more {
 
 
 h1 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   line-height: 1.1em;
+  letter-spacing: 0.01em;
+  font-size: 1.7em;
+  line-height: 1.2em;
+}
+.element p {
+    line-height: 1.5em;
+}
+.element img {
+  width:100%;
+  padding:20px 0px;
 }
 
 #more-text, #more-text2 {
