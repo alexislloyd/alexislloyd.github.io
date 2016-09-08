@@ -16,6 +16,14 @@
         if ($(window).width() < 768) {
           $('#graph').attr('src', 'img/TrumpRomney2.png')
         }
+        $(window).resize(function() {
+          if ($(window).width() < 768) {
+            $('#graph').attr('src', 'img/TrumpRomney2.png')
+          }
+          else {
+            $('#graph').attr('src', 'img/TrumpRomney.png')
+          }
+        });
 
         $('#keepreading').on('click', function() {
           $('#more-text').slideToggle();
