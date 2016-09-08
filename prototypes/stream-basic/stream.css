@@ -80,6 +80,12 @@ h1 {
   font-size: 1.7em;
   line-height: 1.2em;
 }
+@media only screen and (max-width: 768px){
+/* mobile */
+  #h1 {
+    font-size: 1.4em;
+  }
+}
 .element p {
     line-height: 1.5em;
 }
