@@ -40,6 +40,11 @@
           return false;
         });
 
+        $('#collapse2').on('click', function() {
+          $('#more-text2').slideUp();
+          return false;
+        });
+
         $('body').on('click', '.more-items', function() {
           $(this).parent().parent().after('<div class="element hidden-element"><h1>Here is another story</h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <i>Tanta vis admonitionis inest in locis;</i> Non est igitur voluptas bonum. Cum salvum esse flentes sui respondissent, rogavit essentne fusi hostes. Tum Piso: Quoniam igitur aliquid omnes, quid Lucius noster? <b>Sed potestne rerum maior esse dissensio?</b> Duo Reges: constructio interrete. Cur, nisi quod turpis oratio est? Quo modo autem philosophus loquitur? Quae cum essent dicta, finem fecimus et ambulandi et disputandi. Nam si amitti vita beata potest, beata esse non potest. </p><p><a href="#" >Proclivi currit oratio.</a> Non igitur de improbo, sed de callido improbo quaerimus, qualis Q. Quo modo autem optimum, si bonum praeterea nullum est? Non enim iam stirpis bonum quaeret, sed animalis. </p><ul><li>Nam et a te perfici istam disputationem volo, nec tua mihi oratio longa videri potest.</li><li>Quae qui non vident, nihil umquam magnum ac cognitione dignum amaverunt.</li></ul><p class="bottom"><img src="img/buttons.png" class="buttons" /><a href="#" class="more-items">More like this</a></p><br class="clear" /></div>');
           $(this).parent().parent().next().slideDown();
@@ -57,12 +62,23 @@
             <h1>Yellen Signals Rate Increase (Again)</h1>
               <img src="img/yellen2.jpg" />
               <p>
-              "I believe the case for an increase in the federal funds rate has strengthened in recent months,"  is the one quote from Janet Yellen’s speech in Jackson Hole anybody is reading.
+              <strong>"I believe the case for an increase in the federal funds rate has strengthened in recent months,"</strong>  is the one quote from Janet Yellen’s speech in Jackson Hole anybody is reading.
             </p><p>
               Obama’s former economic advisor Austan Goolsbee tweets the Yellen remarks echo "Fed comments from 2015, 2014, 2013, 2012...." Prediction markets agree: Reuters says <strong>rate hike probabilities back to where they were before speech</strong>; 28% for Sept, 70% for Dec.
             </p><p>
               Stocks went down then up a bit, bond yields went up then down a bit, the dollar flat; <strong>enjoy the weather in Wyoming everybody!</strong>
               </p>
+              <p class="bottom">
+                <img src="img/buttons.png" class="buttons" />
+                <a href="#" class="more-items">More like this</a>
+              </p><br class="clear" />
+          </div>
+
+          <!--ELEMENT-->
+          <div class="element quote">
+            <p>
+            "On every issue that matters most to our security, <strong>Donald Trump has no clue what it takes to lead this great country</strong>"</p>
+              <span class="quote-attr">-Joe Biden today in Scranton</span>
               <p class="bottom">
                 <img src="img/buttons.png" class="buttons" />
                 <a href="#" class="more-items">More like this</a>
@@ -86,6 +102,7 @@
           </div>
 
           <!--ELEMENT-->
+          <div class="ad-head">Sponsored Post</div>
           <div class="element ad">
             <h1>JP Morgan Chase Spends 125M On Poor Communities</h1>
             <img src="img/jpmc.jpg" />
@@ -107,6 +124,19 @@
             <a href="https://www.jpmorganchase.com/corporate/news/stories/pro-neighborhoods-main.htm"><strong>Get involved or take advantage of the program »</strong></a>
             </p>
 
+            <!--KEEP READING JPMC-->
+
+            <a href="#" class="more" id="keepreading2">Keep reading &#8964;</a>
+
+            <!--start hidden more text-->
+            <div id="more-text2">
+              <img src="img/jpmc-graphic.jpg" />
+
+              <a href="#" class="more" id="collapse2">Close &#8963;</a>
+            </div>
+
+            <!--END KEEP READING JPMC-->
+
             <br class="clear" /><p class="bottom">
   <img src="img/buttons.png" class="buttons" />
   <a href="#" class="more-items">More like this</a>
@@ -119,10 +149,8 @@
             <p>
               One reason insurers don’t think Obamacare is stable: <a href="http://healthaffairs.org/blog/2016/01/20/after-insurer-complaints-small-steps-to-toughen-special-enrollment-period-eligibility/">too easy</a> for people to sign up outside of the regular enrollment seasons (so they may not sign up until they’re sick). On Tuesday, the Obama administration <a href="https://www.cms.gov/CCIIO/Resources/Regulations-and-Guidance/Downloads/FAQ-Regarding-Verification-of-SEPs.pdf">announced</a> that it’s going to try something new: verifying that people who sign up outside of regular enrollment are actually eligible to do it.
             </p><p>
-              <strong>What It Means</strong>: The whole point of Obamacare’s open enrollment periods &mdash; just like companies have for their workers &mdash; is to make sure people don’t wait until they need health care to get insurance. The new step might make sure open enrollment actually means something, but it’s late in the game. (And it’s just a pilot program &mdash; it’s not even happening everywhere.)
+              <strong>What It Means</strong>: The whole point of Obamacare’s open enrollment periods &mdash; just like companies have for their workers &mdash; is to make sure people don’t wait until they need health care to get insurance. The new step might make sure open enrollment actually means something, but it’s late in the game. For more about what they're doing &mdash; and why it could actually scare some of the healthy people away &mdash; <a href="#" class="more" id="keepreading">keep reading (474 words)&#8964;</a>
             </p>
-
-            <a href="#" class="more" id="keepreading">Keep reading (474 words) &#8964;</a>
 
             <!--start hidden more text-->
             <div id="more-text">
@@ -166,9 +194,6 @@
                   </p><p>
                     <strong>16</strong>
                   States Affected by UnitedHealth Withdrawal
-                  </p><p>
-                    <strong>11.01.16 - 01.31.17</strong>
-                  Next open enrollment season
                   </p>
                 </div>
               </p><p>
@@ -180,10 +205,10 @@
               </p><p>
               So watch to see what happens when the pilot gets underway. All CMS is saying, for now, is that it will be sometime next year.
               </p>
-              <a href="#" class="more" id="collapse">Close &#8963;</a>
+              <a href="#" class="more-close" id="collapse">Close &#8963;</a>
             </div>
             <!--end hidden more text-->
-            
+
             <p class="bottom">
               <img src="img/buttons.png" class="buttons" />
               <a href="#" class="more-items">More like this</a>

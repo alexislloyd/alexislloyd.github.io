@@ -7,9 +7,19 @@ body, html {
 a:link, a:visited, a:active {
 
 }
-p a {
+p a{
   color: inherit;
   text-decoration: underline;
+}
+a.more {
+  font-family: inherit !important;
+  font-size: 1em !important;
+}
+a.more-close {
+  color: #FA6F06;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size:0.75em;
 }
 .clear {
   clear: both;
@@ -41,7 +51,31 @@ p a {
   display:none;
 }
 .ad {
-  background-color: #e1eff9;
+  /*background-color: #e1eff9;*/]
+  border-bottom: 1px solid #FA6F06 !important;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  background-color: #f6f6f6;
+  font-size: 0.95em;
+}
+.ad-head, .ad-foot {
+  background-color: #FA6F06;
+  color:#fff;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  letter-spacing: 0.05em;
+  font-size: 0.7em;
+  padding:7px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.quote p {
+  font-size: 2em;
+}
+.quote a.more-items {
+  font-size: 0.4em;
+}
+.quote-attr {
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-size: 0.85em;
 }
 
 img.buttons {
@@ -77,7 +111,7 @@ h1 {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   line-height: 1.1em;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.03em;
   line-height: 1.2em;
 }
 @media only screen and (max-width: 768px){
@@ -93,7 +127,7 @@ h1 {
   }
 }
 .element p {
-    line-height: 1.5em;
+    line-height: 1.2em;
 }
 .element img {
   width:100%;
