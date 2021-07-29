@@ -1,61 +1,100 @@
-body, html {
-	background-color:#fff;
-	font-family:'Inconsolata',Helvetica, Arial, sans-serif;
-	font-size:1em;
-	letter-spacing: 0.5px;
-	color:#333;
-	margin:0px;
-	line-height:1.5em;
-	width:100%;
+@font-face {
+    font-family: 'Alte-Haas-Grotesk';
+    src:url('fonts/Alte-Haas-Grotesk.ttf.woff') format('woff'),
+        url('fonts/Alte-Haas-Grotesk.ttf.svg#Alte-Haas-Grotesk') format('svg'),
+        url('fonts/Alte-Haas-Grotesk.ttf.eot'),
+        url('fonts/Alte-Haas-Grotesk.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
 }
+
+body, html {
+	font-family: 'Alte-Haas-Grotesk';
+	font-size:1.2em;
+	letter-spacing: -.02rem;
+	line-height: 1.3em;
+	color:#333;
+	width:90%;
+	margin:auto;
+	padding-bottom: 100px;
+}
+
 a:link, a:visited {
 	color:#333;
 	text-decoration:none;
 }
+
 a:hover {
-	color: #D90057;
+	color: #ff0000;
 	text-decoration:underline;
 }
+
+	#header {
+		width:100%;
+		padding:20px 0px;
+		border-bottom: #cccccc 1px solid;
+	}
+	#name {
+		float: left;
+	}
+	#social {
+		text-align: right;
+	}
+
+#social img {
+	width: 24px;
+	height:24px;
+}
+
+@media all and (max-width: 630px) {
+	body, html {
+		font-size: 1em;
+	}
+}
+
 .clear {
 	clear:both;
 }
-
-@media all and (max-width: 630px) {
-	#main {
-		width: 95%;
-	}
-}
-#header {
-	border-bottom: 1px solid #d3d3d3;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
-	font-size: 4em;
-	line-height:100%;
-	text-transform: uppercase;
+.divider {
 	text-align: center;
-	padding: 2% 0px;
-	letter-spacing: 1px;
-	color: #D90057;
 }
-#subhed {
-	margin:20px 0px;
-	font-size: 0.3em;
-	opacity: 0.7;
-	color: #333;
+#bio {
+	padding: 20px 0px 0px 0px;
+/*	border-bottom: #cccccc 1px solid;
+*/}
+
+#bio a:link, #bio a:visited {
+	color:#b3b3b3;
+	text-decoration:none;
 }
-#header a {
-	color: #D90057;
-}
-#header a:hover {
-	text-decoration: none;
+#bio a:hover {
+	color:#ff0000;
+	text-decoration:underline;
 }
 
-@media all and (max-width: 630px) {
-	#header {
-		padding:0px;
-		margin: 0px;
-	}
-	#header p {
-		margin:20px;
-	}
+h1 {
+	color:#b3b3b3;
+	font-size:1.1em;
+	font-weight: normal;
+	padding: 20px 0px;
+}
+
+.list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	color:#b3b3b3;
+	padding-left: 1rem;
+	text-indent: -0.7rem;
+	padding-top:10px;
+	padding-bottom: 10px;
+	border-bottom: #cccccc 1px solid;
+}
+
+	li::before {
+	content: "\02933   ";
+	padding: 0px 10px 0px 0px;
 }
