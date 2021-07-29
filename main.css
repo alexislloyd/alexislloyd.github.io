@@ -46,11 +46,7 @@ a:hover {
 	height:24px;
 }
 
-@media all and (max-width: 630px) {
-	body, html {
-		font-size: 1em;
-	}
-}
+
 
 .clear {
 	clear:both;
