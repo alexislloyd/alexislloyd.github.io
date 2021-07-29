@@ -64,16 +64,11 @@ a:hover {
 */}
 
 #bio a:link, #bio a:visited {
-	color:#b3b3b3;
-	text-decoration:none;
-}
-#bio a:hover {
-	color:#ff0000;
-	text-decoration:underline;
+	font-weight: bold;
 }
 
 h1 {
-	color:#b3b3b3;
+	color:#ff0000;
 	font-size:1.1em;
 	font-weight: normal;
 	padding: 20px 0px;
